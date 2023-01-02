@@ -1,0 +1,1 @@
+Calculadora feita utilizando HTML, CSS e JS (Factory Function).
