@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 :root {
-  --primary-color: rgb(17, 86, 102);
+  --primary-color: rgb(20, 20, 20);
   --primary-color-darker: rgb(9, 48, 56);
 }
 
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
@@ -21,78 +21,55 @@ body {
 .container {
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;  
+  padding: 50px 0;
+  border-radius: 10px;
 }
 
-.container .info {  
-  display: flex;  
-  justify-content: space-between;  
+.container h1{
+  color: white;
 }
 
-.container .info .imc p{
-  font-size: 12px;
-}
-
-
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px; 
-}
-
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
-}
-
-.calculadora{
+.calculadora {
   width: 400px;
 }
 
-.display{
+.display {
   width: 100%;
-  height: 40px; 
-  border: 1px solid #303030; 
-  border-radius: 10px;  
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
   font-size: 1em;
+  background-color: transparent;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
-.btn{
-  width: 100%;
+
+
+.btn {
+  width: 95%;
   height: 40px;
   border: none;
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  background-color: rgb(219, 219, 219);
+  background-color: #646464;
+  margin: 5px;
 }
 
-.btn:hover{
-  background-color: rgb(188, 209, 227);
+.btn:hover {
+  background-color: rgb(236, 145, 61);
 }
 
-.btn-eq:hover{
-  background-color: rgb(206, 125, 39);
+.btn-eq:hover {
+  background-color: rgb(208, 51, 26);
+}
+
+@media only screen and (max-width: 400px) {
+  .display {
+    width: 94%;
+  }
+  .btn {
+    width: 70%;
+  }
 }
